@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TeeRex/static/css/main.fb6540d5.css",
+    "main.js": "/TeeRex/static/js/main.bbea95fc.js",
+    "static/media/emptyCartImg.avif": "/TeeRex/static/media/emptyCartImg.09095b68b668eabbfbae.avif",
+    "static/media/spinner.gif": "/TeeRex/static/media/spinner.9d15a45377100df55e65.gif",
+    "static/media/No-item-found.avif": "/TeeRex/static/media/No-item-found.455fb652cb4515fcf05a.avif",
+    "index.html": "/TeeRex/index.html",
+    "main.fb6540d5.css.map": "/TeeRex/static/css/main.fb6540d5.css.map",
+    "main.bbea95fc.js.map": "/TeeRex/static/js/main.bbea95fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb6540d5.css",
+    "static/js/main.bbea95fc.js"
+  ]
+}
