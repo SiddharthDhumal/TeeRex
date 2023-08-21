@@ -22,7 +22,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 export default function Navbar() {
   const Navigate = useNavigate();
 
-  const ItemCount = JSON.parse(localStorage.getItem("cartItem")).length;
+  const ItemCount = JSON.parse(localStorage.getItem("cartItem"))?.length;
   return (
     <Box className="navbar" sx={{ flexGrow: 1 }}>
       <AppBar position="static">

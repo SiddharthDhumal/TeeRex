@@ -14,7 +14,7 @@ export default function CartList({ product }) {
     JSON.parse(localStorage.getItem("prevCartItem"))
   );
   const [cartItem, setCartItem] = useState(
-    prevCartItem.length > 0 ? [...prevCartItem] : []
+    prevCartItem?.length > 0 ? [...prevCartItem] : []
   );
 
   const prevId = JSON.parse(localStorage.getItem("prevId"));
@@ -22,7 +22,7 @@ export default function CartList({ product }) {
   const Navigate = useNavigate();
 
   function handleAddtoCart(item) {
-    if (!cartItem.includes(item) && !prevId.includes(item.id)) {
+    if (!cartItem?.includes(item) && !prevId?.includes(item.id)) {
       setCartId([...cartId, item.id]);
       setCartItem([...cartItem, item]);
       localStorage.setItem("cartItem", JSON.stringify(cartItem));
@@ -79,9 +79,9 @@ export default function CartList({ product }) {
                         <Typography style={{ fontSize: "1.5rem" }}>
                           ${item?.price}
                         </Typography>
-                        {item.quantity > 0 ? (
-                          prevId.includes(item.id) ||
-                          cartId.includes(item.id) ? (
+                        {item?.quantity > 0 ? (
+                          prevId?.includes(item.id) ||
+                          cartId?.includes(item.id) ? (
                             <Button
                               className="checkout-btn"
                               onClick={() => handleNavigate(item)}>
